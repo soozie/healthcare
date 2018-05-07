@@ -29,4 +29,4 @@ class Navigation extends React.Component {
   }
 }
 
-export default Header;
+export default Navigation;

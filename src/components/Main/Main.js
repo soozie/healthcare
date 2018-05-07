@@ -16,9 +16,9 @@ class Main extends React.Component {
         <div class="main__section4">
 
         </div>
-      </main>g
+      </main>
     )
   }
 }
 
-export default Header;
+export default Main;

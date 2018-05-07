@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+
+  body {
+
+    .header {
+      background-color: #43445b;
+      padding: 30px;
+      transition: min-width .3s ease-in-out;
+
+      &__logo {
+
+      }
+
+      &__title {
+        font-size: 18px;
+        color: lightblue;
+        font-weight: 400;
+
+      }
+
+      &__life-title {
+        font-size: 19px;
+        font-weight: 700;
+        color: cornflowerblue;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      background-color: #43444a;
+
+
+      &__mobile {
+        display: none;
+
+      }
+
+      &__mobile-icon {
+
+      }
+
+      &__desktop {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+
+      &__item {
+        text-decoration: none;
+        background-color: #43444a;
+        padding: 15px 20px;
+
+        span {
+          font-size: 12px;
+          color: white;
+          font-weight: 300;
+
+        }
+      }
+    }
+
+    .main {
+      background-color: #b3bbbd8c;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      width: 100%;
+      justify-content: space-evenly;
+      padding-top: 1%;
+
+      &__section1 {
+        flex-shrink: 1;
+        width: 48%;
+        height: 48%;
+        background-color: #f2fcff8c;
+        border-radius: 2px;
+
+      }
+
+      &__section2 {
+        width: 48%;
+        height: 48%;
+        flex-shrink: 1;
+        background-color: #f2fcff8c;
+        border-radius: 2px;
+
+      }
+
+      &__section3 {
+        width: 48%;
+        height: 48%;
+        flex-shrink: 1;
+        background-color: #f2fcff8c;
+        border-radius: 2px;
+
+      }
+
+      &__section4 {
+        width: 48%;
+        height: 48%;
+        flex-shrink: 1;
+        background-color: #f2fcff8c;
+        border-radius: 2px;
+
+      }
+    }
+  }
+}
