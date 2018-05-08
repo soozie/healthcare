@@ -9,7 +9,7 @@ class Navigation extends React.Component {
           <img src="./" alt="login" className="nav__mobile-icon" />
           <img src="./" alt="campus" className="nav__mobile-icon" />
           <img src="./" alt="online" className="nav__mobile-icon" />
-        </div className="nav__mobile">
+        </div>
         <div className="nav__desktop">
           <a className="nav__item" href="#"><span>PATIENT</span></a>
           <a className="nav__item" href="#"><span>ALLERGY</span></a>

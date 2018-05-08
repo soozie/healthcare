@@ -5,7 +5,7 @@ class Main extends React.Component {
     return(
       <main class="main">
         <div class="main__section1">
-
+          {this.props.children}
         </div>
         <div class="main__section2">
 
