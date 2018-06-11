@@ -5,7 +5,7 @@ class Header extends React.Component {
     return(
       <header className="header">
         <div className="header__logo">
-          <h2 className="header__title">SINERGY <span class="header__life-title">LIFE</span> TECHNOLOGY</h2>
+          <h2 className="header__title">SINERGY <span className="header__life-title">LIFE</span> TECHNOLOGY</h2>
         </div>
       </header>
     )

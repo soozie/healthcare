@@ -12,33 +12,34 @@ class Patient extends React.Component {
     return(
       <div className="patient">
         <div className="patient__item">
-          'resourceType: "Patient"'
+          <div className="patient__key">resourceType:</div>
+          <div className="patient__value">Patient</div>
         </div>
         <div className="patient__item">
-          '"birthDate": "1985-08-01"'
+          <div className="patient__key">birthDate:</div>
+          <div className="patient__value">'1985-08-01'</div>
         </div>
         <div className="patient__item">
-          '"active": true'
+          <div className="patient__key">gender:</div>
+          <div className="patient__value">male</div>
         </div>
         <div className="patient__item">
-          '"gender": "male"'
+          <div className="patient__key">deceasedBoolean:</div>
+          <div className="patient__value">'false'</div>
         </div>
         <div className="patient__item">
-          '"deceasedBoolean": false'
+          <div className="patient__key">id:</div>
+          <div className="patient__value">'Tbt3KuCY0B5PSrJvCu2j-PlK.aiHsu2xUjUM8bWpetXoB'</div>
         </div>
         <div className="patient__item">
-          '"id": "Tbt3KuCY0B5PSrJvCu2j-PlK.aiHsu2xUjUM8bWpetXoB"'
+          <div className="patient__key">given:</div>
+          <div className="patient__value">Moe</div>
+          <div className="patient__key">family:</div>
+          <div className="patient__value">Karzai</div>
         </div>
         <div className="patient__item">
-          'display": "Physician Family Medicine"'
-        </div>
-        <div className="patient__item">
-          'name: Moe'
-          'family-name: Karzai'
-        </div>
-        <div className="patient__item">
-          'address: Link Road Mahon Point'
-          'VoxPro'
+          <div className="patient__key">address:</div>
+          <div className="patient__value">'Link Road Mahon Point'</div>
         </div>
       </div>
     )

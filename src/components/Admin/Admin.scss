@@ -1,0 +1,104 @@
+.admin {
+  height: 100%;
+  width: 100%;
+
+  &__header {
+    align-items: center;
+    background-color: #697689;
+    color: #AEB9C9;
+    display: flex;
+    height: 45px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__headerEntity {
+
+  }
+
+  &__headerLocation {
+
+  }
+
+  &__headerContacts {
+
+  }
+
+  &__headerRooms {
+
+  }
+
+  &__headerUsers {
+
+  }
+
+  &__main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  &__searchContainer {
+    align-items: center;
+    border: 1px solid #B0F6FB;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+    width: 335px;
+
+  }
+
+  &__searchInput {
+    background-color: transparent;
+    border: 1px solid #B0F6FB;
+    border-radius: 3px;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding: 14px;
+    text-align: center;
+    width: 287px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__searchButton {
+    background-color: transparent;
+    border: 1px solid #B0F6FB;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color .25s;
+    padding: 12px 0;
+    width: 125px;
+
+    &:hover {
+      background-color: #B0F6FB;
+    }
+  }
+
+  &__results {
+
+  }
+
+  &__entitiesList {
+
+  }
+
+  &__footer {
+    background-color: #E1E6EE;
+    bottom: 0;
+    height: 25px;
+    position: fixed;
+    width: 100%;
+  }
+}

@@ -1,22 +1,53 @@
 import React, { Component } from 'react';
-import Main from './components/Main/Main.js';
-import Navigation from './components/Navigation/Navigation.js';
-import Header from './components/Header/Header.js';
-import Patient from './components/Patient/Patient.js';
-import logo from './logo.svg';
+import Login from './components/Login/Login.js';
+import Admin from './components/Admin/Admin.js';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loginView: false,
+      adminDashboard: false
+    };
+    this.handleRole = this.handleRole.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({
+      loginView: true
+    });
+  }
+
+  handleRole(role) {
+    console.log('sono un ' + role);
+    if (role === 'admin') {
+      console.log('cambia stato');
+      this.setState({
+        loginView: false,
+        adminDashboard: true
+      });
+    }
+  }
+
   render() {
+    let content = (
+      <Login
+        handleRole={this.handleRole}
+        loginView={this.state.loginView}
+      />
+    );
+
+    if (this.state.adminDashboard) {
+      content = (
+        <Admin
+          adminDashboard={this.state.adminDashboard}
+        />
+      );
+    }
     return (
       <div className="App">
-        <Header />
-        <div className="container">
-          <Navigation />
-          <Main>
-            <Patient />
-          </Main>
-        </div>
+        {content}
       </div>
     );
   }
