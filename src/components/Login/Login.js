@@ -54,12 +54,8 @@ class Login extends React.Component {
   }
 
   render() {
-    let hiddenClassName = '';
-    if (!this.props.loginView) {
-      hiddenClassName = 'login--hidden';
-    }
     return(
-      <div className={`login ${hiddenClassName}`}>
+      <div className="login">
         <div className="login__container">
           <div className="login__containerControls">
             <input

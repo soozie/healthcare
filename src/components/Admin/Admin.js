@@ -7,15 +7,16 @@ class Admin extends React.Component {
     this.state = {
       input: ''
     };
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(event) {
+    this.setState({ input: event.target.value });
   }
 
   render() {
-    let hiddenClassName = '';
-    if (!this.props.adminDashboard) {
-      hiddenClassName = 'admin--hidden';
-    }
     return(
-      <div className={`admin ${hiddenClassName}`}>
+      <div className="admin">
         <header className="admin__header">
           <div className="admin__headerEntity">Entities</div>
           <div className="admin__headerLocation">Locations</div>
@@ -27,24 +28,23 @@ class Admin extends React.Component {
           <div className="admin__leftContainer">
             <div className="admin__searchContainer">
               <input className="admin__searchInput"
+                onChange={this.handleInputChange}
                 placeholder="Search an Entity/Company"
                 value={this.state.input}
               />
               <button className="admin__searchButton">SEARCH</button>
             </div>
             <div className="admin__results">
-              <span>Results</span>
               <div className="admin__entitiesList">
                 Entities results
               </div>
             </div>
           </div>
           <div className="admin__rightContainer">
-            <div className="admin__entities"></div>
-            <div className="admin__locations"></div>
-            <div className="admin__contacts"></div>
-            <div className="admin__rooms"></div>
-            <div className="admin__users"></div>
+            <div className="admin__locations">Locations</div>
+            <div className="admin__contacts">Contacts</div>
+            <div className="admin__rooms">Rooms</div>
+            <div className="admin__users">Users</div>
           </div>
         </main>
         <footer className="admin__footer"></footer>

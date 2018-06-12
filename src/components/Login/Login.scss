@@ -8,6 +8,7 @@
   &__container {
     align-items: center;
     border: 1px solid #B0F6FB;
+    box-shadow: 0 3px 2px 2px lightgrey;
     display: flex;
     height: 320px;
     justify-content: center;
@@ -27,6 +28,7 @@
     background-color: transparent;
     border: 1px solid #B0F6FB;
     border-radius: 3px;
+    box-shadow: 0 2px 2px 2px lightgrey;
     color: black;
     font-size: 16px;
     margin-bottom: 16px;
@@ -43,6 +45,7 @@
     background-color: transparent;
     border: 1px solid #B0F6FB;
     border-radius: 3px;
+    box-shadow: 0 2px 2px 2px lightgrey;
     color: black;
     font-size: 16px;
     margin-bottom: 16px;
@@ -59,6 +62,7 @@
     background-color: transparent;
     border: 1px solid #B0F6FB;
     border-radius: 5px;
+    box-shadow: 0 2px 2px 2px lightgrey;
     cursor: pointer;
     font-size: 14px;
     text-align: center;
